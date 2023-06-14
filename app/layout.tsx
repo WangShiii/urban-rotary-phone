@@ -1,3 +1,4 @@
+import { ReactNode } from "react";
 import "./tailwind.css";
 
 export const metadata = {
@@ -5,11 +6,7 @@ export const metadata = {
   description: "my shit hill for web client",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body>{children}</body>
